@@ -1,0 +1,39 @@
+use conta
+
+db.conta.insertOne({
+    _id: 8,
+    id_cliente: 6,
+    Numero_Conta: "50453-8",
+    Agência: "5575",
+    Tipo: "Conta poupança",
+    CPF: "138.934.992-61",
+    Saldo: 1.227,
+    Movimentação: [{local: "Banco", data: ISODate("2024-10-15")}]
+    });
+ 
+db.conta.updateOne(
+    {_id: 8, Saldo: {$gt: 0}},
+    {
+    $inc: {Saldo: 2500},
+    $push: {Movimentação: {local: "Pix",
+    data: new Date() } }
+    }
+    );
+ 
+db.conta.updateOne(
+    {_id: 8, Saldo: {$gt: 0}},
+    {
+    $inc: {Saldo: -870},
+    $push: {Movimentação: {local: "TED",
+    data: new Date() } }
+    }
+    );
+ 
+    db.conta.updateOne(
+        {_id: 8, Saldo: {$gt: 0}},
+        {
+        $inc: {Saldo: -1025},
+        $push: {Movimentação: {local: "Caixa",
+        data: new Date() } }
+        }
+        );
