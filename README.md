@@ -76,4 +76,9 @@ Este projeto é uma aplicação **Full Stack** simples que implementa um **CRUD 
     O frontend abrirá automaticamente em: **http://localhost:3000**
 
 ---
+
+Print do projeto final
+<img width="829" height="743" alt="image" src="https://github.com/user-attachments/assets/d025b7e1-95b8-479b-9aea-2eefebee1639" />
+
+---
 ✨ Desenvolvido por Eduardo Henrique Silva de Amorim | Banco de Dados Não-Relacional
