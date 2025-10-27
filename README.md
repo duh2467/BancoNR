@@ -47,9 +47,9 @@ Este projeto é uma aplicação **Full Stack** simples que implementa um **CRUD 
 2.  Crie e ative um ambiente virtual:
     ```
     python -m venv venv
-    venv\Scripts\activate      no Windows
-    ou
-    source venv/bin/activate   no Linux/Mac
+    venv\Scripts\activate      # no Windows
+    # ou
+    source venv/bin/activate   # no Linux/Mac
     
 3.  Instale as dependências (a partir da raiz do projeto):
     ```
@@ -64,7 +64,7 @@ Este projeto é uma aplicação **Full Stack** simples que implementa um **CRUD 
     uvicorn main:app --reload --port 8000
     ```
 
-    O backend ficará disponível em: ** http://localhost:8000/docs **
+    O backend ficará disponível em: **http://localhost:8000/docs**
 
 ### 🔹 2. Configurar o Frontend (React)
 
