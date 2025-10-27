@@ -43,27 +43,22 @@ Este projeto é uma aplicação **Full Stack** simples que implementa um **CRUD 
 1.  Acesse a pasta do backend:
     ```
     cd backend
-  
 2.  Crie e ative um ambiente virtual:
     ```
     python -m venv venv
     venv\Scripts\activate      # no Windows
     # ou
     source venv/bin/activate   # no Linux/Mac
-    
 3.  Instale as dependências (a partir da raiz do projeto):
     ```
     pip install -r ../requirements.txt
-    
 4.  **Inicie o Servidor Redis** (necessário antes de executar o FastAPI):
     ```
     redis-server
-    
 5.  Execute o servidor FastAPI:
     ```
     uvicorn main:app --reload --port 8000
     ```
-
     O backend ficará disponível em: **http://localhost:8000/docs**
 
 ### 🔹 2. Configurar o Frontend (React)
@@ -71,11 +66,9 @@ Este projeto é uma aplicação **Full Stack** simples que implementa um **CRUD 
 1.  Acesse a pasta do frontend:
     ```
     cd frontend
-    
 2.  Instale as dependências:
     ```
     npm install
-    
 3.  Inicie o servidor React:
     ```
     npm start
@@ -83,12 +76,4 @@ Este projeto é uma aplicação **Full Stack** simples que implementa um **CRUD 
     O frontend abrirá automaticamente em: **http://localhost:3000**
 
 ---
-
-### 🧾 Arquivo `.env` (Backend)
-
-Crie um arquivo `.env` dentro da pasta `backend/` com o seguinte conteúdo:
-
-```env
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_DB=0
+✨ Desenvolvido por Eduardo Henrique Silva de Amorim | Banco de Dados Não-Relacional
